@@ -1041,7 +1041,7 @@ a {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .galery-element {
     margin: 15px;
   }
