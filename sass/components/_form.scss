@@ -16,8 +16,7 @@
     outline: none;
     margin-right: auto;
     margin-left: auto;
-
-
+    margin-bottom: 20px;
     
     
     @media screen and (max-width: $desktop) {
@@ -25,7 +24,7 @@
     }
 
 	@media screen and (min-width: $mobile) {
-        margin-bottom: 20px;
+        
     }
 
 

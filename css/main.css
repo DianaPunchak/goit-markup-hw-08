@@ -1869,12 +1869,6 @@ a {
   margin-top: 60px;
 }
 
-@media screen and (max-width: 768px) {
-  .element.social {
-    margin-bottom: 44px;
-  }
-}
-
 .footer {
   background-color: #2F303A;
   padding: 60px 0;
@@ -2076,6 +2070,7 @@ a {
   outline: none;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2083,12 +2078,6 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .email-form {
-    margin-bottom: 20px;
   }
 }
 
