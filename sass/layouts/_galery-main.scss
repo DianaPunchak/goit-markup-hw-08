@@ -27,7 +27,10 @@
     
 
 
-
+    .element.social {
+      margin-top: 60px;
+      margin-bottom: 44px;
+  }
 
 
 
@@ -61,7 +64,7 @@
         max-width: 450px;
       } 
 
-     @media screen and (max-width: 768px) {
+     @media screen and (max-width: 1200px) {
       margin: 15px;
      } 
 
