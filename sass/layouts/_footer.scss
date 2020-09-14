@@ -28,6 +28,11 @@
 
 .element.social {
     margin-top: 60px;
+
+    @media screen and (max-width: $tablet) {
+        margin-bottom: 44px;
+    }
+
 }
 
 
