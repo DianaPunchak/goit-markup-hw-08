@@ -4,10 +4,17 @@
     margin-bottom: 25px;
     display: flex;
   
+  
 
     @media screen and (min-width: $tablet) {
-       
+        margin-top: 60px;
         justify-content: center;
+        margin-bottom: 30px;
+        
+    }
+
+
+    @media screen and (min-width: $desktop) {
         margin-top: 94px;
         margin-bottom: 50px;
     }

@@ -553,7 +553,7 @@ li {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    margin-right: 85px;
+    margin-right: 93px;
   }
 }
 
@@ -614,8 +614,14 @@ li {
   .site-nav > li > a {
     font-size: 18px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 0.85;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    padding-top: 20px;
   }
 }
 
@@ -651,19 +657,30 @@ li {
 
 @media screen and (max-width: 767px) {
   .site-nav .item {
-    margin-bottom: 40px;
+    margin-bottom: 47px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .site-nav .item {
     margin-right: 50px;
-    padding: 0px;
   }
 }
 
-.site-nav .item:last-child {
+.site-nav .item .site-nav .item:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav .dop {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .emails {
+    padding-top: 10px;
+  }
 }
 
 .site-nav .link.current::after {
@@ -687,13 +704,6 @@ li {
           align-items: center;
 }
 
-/* 
-.menu-container.is-open{
-
-    display: none;
-
-}
- */
 .menu-container {
   display: none;
   /*   //если екран больше чем 480
@@ -829,7 +839,7 @@ a {
 .contacts-nav > li > a {
   color: #757575;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 0.85;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -872,9 +882,16 @@ a {
 
 @media screen and (min-width: 768px) {
   .btn {
+    margin-top: 60px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn {
     margin-top: 94px;
     margin-bottom: 50px;
   }
@@ -982,6 +999,12 @@ a {
   .galery {
     margin: -15px;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .galery {
+    margin-bottom: 78px;
   }
 }
 

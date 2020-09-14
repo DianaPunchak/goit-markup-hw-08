@@ -19,21 +19,12 @@
 
 
 .flex{
-  
-
-    @media screen and (min-width: $tablet) {
-       
-    }
-    
     @media screen and (min-width: $desktop) {
         display: flex;
         align-items: baseline;     
     }
 
 }
-
-
-
 
 .element.social {
     margin-top: 60px;

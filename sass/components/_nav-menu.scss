@@ -28,7 +28,7 @@
     @media screen and (min-width: $desktop) {
         font-size: 18px;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 14px;
         line-height: 0.85;
     }
 
@@ -36,9 +36,17 @@
 }
 
 
-
-
+//ul
 .site-nav{
+
+
+ //от 768
+    @media screen and (max-width: 767px) {
+        padding-top: 20px;
+    }
+    
+
+
     //от 768
     @media screen and (min-width: $tablet) {
         display: flex;
@@ -77,32 +85,35 @@
 
 
 .site-nav .item{
+    @media screen and (max-width: 767px) {
+           margin-bottom: 47px;
+     }
+    //елси екран от  480 нам надо его установать
+    @media screen and (min-width: $tablet) {
+        margin-right: 50px;
+      
+    }
+
+    .site-nav .item:last-child{
+    margin-right: 0;
+    }
+
+}
 
 
+.site-nav .dop {
     @media screen and (max-width: 767px) {
            margin-bottom: 40px;
      }
 
-
-
-
-    //елси екран от  480 нам надо его установать 
-
-    @media screen and (min-width: $tablet) {
-        margin-right: 50px;
-        padding: 0px;
-    } 
-  
-    
-    
-   
 }
 
 
 
-
-.site-nav .item:last-child{
-margin-right: 0;
+.emails {
+    @media screen and (max-width: 767px) {
+    padding-top: 10px;
+}
 }
 
 
@@ -122,27 +133,13 @@ margin-right: 0;
 
 
 
-
-
-
-
 .main-nav{
     display: flex;
     align-items: center;
 }
-/* 
-.menu-container.is-open{
-
-    display: none;
-
-}
- */
-
 
 
 .menu-container {
-  
-
     display: none;
 
     // если екран до 768 вклчая в себя 768
