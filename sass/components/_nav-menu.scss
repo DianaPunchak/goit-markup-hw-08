@@ -1,0 +1,225 @@
+
+
+
+.site-nav >li>a{
+    color:$main-text-color;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.16;
+    padding-bottom: 31;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover{
+        color:$accent-text-color;
+    }
+    
+    &:focus{
+        color:$accent-text-color;
+    
+    } 
+
+
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+        letter-spacing: 0.02em;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        font-size: 18px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 0.85;
+    }
+
+
+}
+
+
+
+
+.site-nav{
+    //от 768
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+    }
+
+    
+    
+}
+
+.link{
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 8px;
+
+
+    @media screen and (min-width: $tablet) {
+       
+
+    padding-bottom: 32px;
+
+
+    }
+    
+    @media screen and (min-width: $desktop) {
+        padding-top: 32px;
+        padding-bottom: 31px;
+    }
+
+
+
+
+    
+}
+
+
+
+.site-nav .item{
+
+
+    @media screen and (max-width: 767px) {
+           margin-bottom: 40px;
+     }
+
+
+
+
+    //елси екран от  480 нам надо его установать 
+
+    @media screen and (min-width: $tablet) {
+        margin-right: 50px;
+        padding: 0px;
+    } 
+  
+    
+    
+   
+}
+
+
+
+
+.site-nav .item:last-child{
+margin-right: 0;
+}
+
+
+
+
+.site-nav .link.current::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0px;
+    border-radius: 2px;
+    background-color: $accent-text-color;
+  }
+
+
+
+
+
+
+
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+/* 
+.menu-container.is-open{
+
+    display: none;
+
+}
+ */
+
+
+
+.menu-container {
+  
+
+    display: none;
+
+    // если екран до 768 вклчая в себя 768
+    @media screen and (max-width: 767px) {
+        
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 393px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+        padding: 20px;
+        text-align: center;
+        font-size: 20px;
+        z-index: 1;
+        border: 1px solid #ececec;
+    
+        &.is-open{
+        display: block;
+        }
+   
+    }
+
+ //елсли экран о  767 
+    @media screen and (min-width: 768px) {
+        display: flex;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+
+    
+
+   /*   //если екран больше чем 480
+    @media screen and (min-width: 481px) {
+        display: flex;
+        padding: 0;
+    } */
+    
+  
+    }
+
+
+
+     
+button.menu-btn {
+    margin-left: auto;
+    display: inline-flex;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+
+
+    //скрыть  кнопку если екран больше чем 767 включая в себя 767
+
+    @media screen and (min-width:$tablet) {
+        display: none;
+    }
+
+
+}
+
+
+
+.menu-btn .close-icon {
+    display: none;
+
+}
+
+
+.menu-btn.is-open .close-icon {
+    display: block;
+
+}
+
+.menu-btn.is-open .open-icon {
+    display: none;
+
+}

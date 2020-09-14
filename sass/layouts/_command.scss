@@ -1,0 +1,233 @@
+
+
+
+.command-section{
+   
+    background-color: #F5F4FA;
+
+    @media screen and (min-width: $tablet) {
+       
+    }
+    
+    @media screen and (min-width: $desktop) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        margin-bottom: 94px; 
+    }
+}
+
+.conteiner.command{
+    background-color: #F5F4FA;
+
+
+
+    @media screen and (max-width: 1199px) {
+      
+        padding-bottom: 30px;
+
+
+    }
+
+
+
+}
+
+.command-section-list{
+      
+// если экран больше чем 768 и выше
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+
+    @media screen and (min-width: $desktop) {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+}
+
+
+
+.command-list{
+  
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $tablet) {
+       width: 354px;
+       margin-right: 30px;
+     
+    }
+    
+    @media screen and (min-width: $desktop) {
+        display: block;
+        width: calc((100%-90px) / 4);
+        margin-right: 30px;
+    }
+
+}
+
+
+.command-list:nth-last-child(2n+1){
+
+ //елси екран больше чем
+ @media screen and (max-width: 1199px) {
+  
+    margin-right: 0px; 
+
+}
+
+@media screen and (min-width: $desktop) {
+  
+    margin-right: 30px; 
+
+}
+
+
+}  
+
+
+
+/* 
+@media screen and (min-width: $desktop) {
+    .command-list:nth-last-child(1){
+      margin-right: 0px; 
+     }   
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+.icon{
+    display: flex;
+    justify-content: center;
+}
+
+.icon-list{
+    margin-right: 10px;
+}
+
+
+
+
+.icon-list:last-child{
+    margin-right: 0px;
+
+}
+
+
+
+
+
+
+.command-name{
+ font-style: normal;
+ font-weight: 500;
+ font-size: 16px;
+ text-align: center;
+
+ line-height: 1.18;
+ margin-top: 30px;
+            margin-bottom: 10px; 
+
+          
+
+        @media screen and (max-width: $desktop) {
+           
+        letter-spacing: 0.03em;
+
+        }
+ 
+     
+        @media screen and (min-width: $desktop) {
+            line-height: 0.84;
+           /*  margin-top: 30px;
+            margin-bottom: 10px;  */
+        }
+
+}
+
+.description{
+ color: $secondary-text-color;   
+ font-weight: normal;
+ font-size: 16px;
+
+ text-align: center;
+ line-height: 1.18;
+
+
+    @media screen and (max-width: $desktop) {
+           
+    letter-spacing: 0.03em;
+    margin: 0 0 16px 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+        line-height: 0.84;
+    }
+  
+
+
+
+ 
+}
+
+
+.linc-social{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    fill: #afb1b8;
+
+  
+    margin-bottom: 24px;
+
+    border-radius: 50%;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     
+    &:hover{
+        border-radius: 50%;
+        background-color: $accent-text-color;
+        fill: $white-text-color;
+       
+     }
+
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 0px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+
+        margin-top: 16px;
+        margin-bottom: 30px;
+
+
+    }
+
+
+
+
+
+
+  }
+  
+       
+  

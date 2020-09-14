@@ -1,0 +1,171 @@
+.conteiner-footer{
+    
+    background-color:#2F303A;
+    padding-left: 15px;
+    padding-right: 15px;  
+
+    @media screen and (min-width: $tablet) {
+       
+    }
+    
+    @media screen and (min-width: $desktop) {
+    width: 1200px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+      
+    }
+}
+
+
+.flex{
+  
+
+    @media screen and (min-width: $tablet) {
+       
+    }
+    
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        align-items: baseline;     
+    }
+
+}
+
+
+
+
+.element.social {
+    margin-top: 60px;
+}
+
+
+.footer{
+    
+    background-color: #2F303A;
+
+    padding: 60px 0;
+
+    @media screen and (min-width: $tablet) {
+        padding: 0;
+    }
+    
+  
+}
+
+
+
+.element{ 
+
+   
+
+    @media screen and (min-width: $tablet) {
+       
+    }
+    
+    @media screen and (min-width: $desktop) {
+        margin-right: 69px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+
+}
+
+
+@media screen and (min-width: $tablet) {
+  
+    .footerone{
+
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        padding-bottom: 41px;
+    }
+    
+}
+
+
+@media screen and (min-width: $desktop) {
+    .footerone{
+        padding-bottom: 0px;
+    }     
+}
+
+
+
+.footertwo {
+    padding-bottom: 0;
+    @media screen and (min-width: $tablet) {
+        padding-bottom: 60px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 0;
+    }
+   
+
+
+
+}
+
+
+@media screen and (max-width: 1199px) {
+
+.footertwo {
+    text-align: center;
+    
+}
+
+ul.social-networks-list {
+    justify-content: center;
+}
+
+
+}
+
+
+@media screen and (max-width: 1199px) {
+
+.footerone {
+    text-align: center;
+}
+
+}
+
+.btn-footer{
+    
+   
+    border-style: none;
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 29px;
+    padding-right: 28px;    
+    cursor: pointer;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+    @media screen and (max-width: $tablet) {
+        display: block;
+    }
+   
+
+
+    @media screen and (min-width: $tablet) {
+        
+    }
+    
+    @media screen and (min-width: $desktop) {
+        position: absolute; 
+        margin-left: 12px;
+    }
+}

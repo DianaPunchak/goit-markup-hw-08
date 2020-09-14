@@ -1,0 +1,116 @@
+
+
+    
+
+// UL
+.client-section-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    
+
+    margin-bottom: 60px;
+
+
+    @media screen and (min-width: $tablet) {
+    /*  margin: 0px; */
+      margin-bottom: 45px;
+    
+    }
+    
+    @media screen and (min-width: $desktop) {
+       /*  margin-bottom: 15px; */
+        margin-bottom: 64px;
+        justify-content: space-between;
+    }
+	
+}
+
+
+
+// LI 
+.client{
+
+    width: calc((100%-2*30px) / 2);
+    
+    @media screen and (min-width: $tablet) { 
+
+    width: calc((100%-3*30px) / 3);   
+
+    }
+    
+    @media screen and (min-width: $desktop) {
+        width: calc((100%-6*30px) / 6);  
+    }
+}
+
+
+
+//cссылка А
+.linc-client{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /// задаем макс ширину это значит что если :
+   
+    height: 90px;
+    margin: 15px;
+    fill: #afb1b8;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover{
+        fill: $accent-text-color;
+        border: 1px solid $accent-text-color;
+    }
+
+    
+    //если екран больше чем 768
+    @media screen and (max-width: $mobile) {
+        max-width: 210px;
+    }
+
+
+
+
+
+    //если екран больше чем 768
+    @media screen and (min-width: $tablet) {
+        width: 226px;
+    }
+    
+    //если екран больше чем 1200
+    @media screen and (min-width: $desktop) {
+        width: 170px;
+        align-items: center;
+        justify-content: center;
+    }
+	
+    
+} 
+
+
+    .client-section .section-title {
+        
+
+        @media screen and (max-width: $tablet) {
+            margin-top: 30px;
+            margin-bottom: 0;
+            padding-bottom: 30px;
+        }
+    }  
+
+
+
+
+
+
+
+
+
+.linc-icon{
+  fill: currentColor;  
+}
+

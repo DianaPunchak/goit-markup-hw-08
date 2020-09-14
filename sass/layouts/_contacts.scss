@@ -1,0 +1,120 @@
+.contacts-nav{
+    margin-left: auto;
+
+
+   
+
+    @media screen and (max-width: $tablet) {
+        margin-top: 19px;  
+    }
+
+
+}
+
+.emails {
+    margin-bottom: 16px;
+
+
+
+
+
+
+    //если екран от 768 применять не не включая 767 ***
+    @media screen and (min-width: $tablet) {
+      /*   margin-bottom: 10px; */
+        margin-bottom: 5px;
+
+
+    }
+    
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 0px;
+    }
+
+
+}     
+
+
+
+
+
+.contacts-nav .item{
+
+    @media screen and (min-width: $desktop) {
+        margin-right: 30px;
+    }
+
+    
+
+
+
+}
+
+.contacts-nav .item:last-child{
+    margin-right: 0;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.contacts-nav{
+
+  /*   @media screen and (min-width: $tablet) {
+        display: flex;
+    } */
+    
+    //
+    @media screen and (min-width: $desktop) {
+        display: flex;
+    }
+    
+}
+
+
+
+
+.link.current{
+    color:$accent-text-color;
+}
+
+
+
+
+.contacts-nav>li>a{
+    color:$secondary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.85;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    letter-spacing: 0.02em;
+
+    &:hover{
+        color:$accent-text-color;
+    }
+    
+    &:focus{
+        color:$accent-text-color;
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 12px;
+    }
+    
+    @media screen and (min-width: $desktop) {
+        font-size: 14px;
+    }
+
+
+}
+
+
+.icon-svg{
+    margin-right: 10px;
+    fill: currentColor;
+}

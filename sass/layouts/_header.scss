@@ -1,0 +1,27 @@
+  .header-page{
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+   
+    
+    @media screen and (min-width: $tablet) {
+      height: 80px;
+      border: 1px solid #ECECEC;
+    }
+
+
+
+
+
+
+    }
+
+
+  .menu-btn:hover, .menu-btn:focus {
+      fill: #2196f3;
+      outline: none;
+  }
+
+
+    
